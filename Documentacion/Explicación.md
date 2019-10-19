@@ -1,4 +1,4 @@
-# Detección de perdida de color en la pulpa de fresas
+# Detección de pérdida de color en la pulpa de fresas
 
 ### Introducción
 

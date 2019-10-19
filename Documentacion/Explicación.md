@@ -1,3 +1,3 @@
-# Detección de Pérdida de Propiedades Específicas en las Fresas
+# Detección de Pérdida de Propiedades Específicas en la pulpa Fresas
 
 En este trabajo vamos a 

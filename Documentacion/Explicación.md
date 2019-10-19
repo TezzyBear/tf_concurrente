@@ -1,3 +1,5 @@
+# Deteccón de perdida de color en la pulapa de fresas
+
 ### Introducción
 
 La industria alimenticia en el Perú ha crecido un 17% durante el 2018, esto indica que el desempeño de los diversos sectores ha desarrollado de mejor manera sus productos mediante el uso de diversas tecnologías y aumento de relaciones comerciales. Tal es el caso del rubro de producción, venta y exportación de pulpa de fresa, la cual es usada en diversos productos alimenticios como mermeladas, yogures, dulces, entre otros. Esta pulpa es tratada con temperaturas de -20° C para mantener las propiedades biológicas, es decir, sin intervención de microorganismos que ocasionan que la pulpa pierda calidad. Sin embargo, aún ocurren cambios químicos al mantener congelado el producto, lo que provoca pérdida de características esenciales en la pulpa.

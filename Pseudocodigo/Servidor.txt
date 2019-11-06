@@ -13,3 +13,4 @@ Inicio
                     Datos <- añadir Dato
                     Cliente -> escoger aleatorio de Clientes
                     Cliente <- guardar Dato encriptado
+Fin

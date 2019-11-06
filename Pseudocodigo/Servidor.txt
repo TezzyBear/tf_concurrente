@@ -9,8 +9,10 @@ Inicio
         Hacer siempre:
             Si Nuevo Atributo de Dato llega:
                 Dato <- añadir atributo
+                Dato <- encriptar Dato
                 Si Dato contiene todos sus Atributos:
                     Datos <- añadir Dato
                     Cliente -> escoger aleatorio de Clientes
                     Cliente <- guardar Dato encriptado
+                    
 Fin

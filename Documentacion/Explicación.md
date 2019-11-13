@@ -3,15 +3,15 @@
 ### Resumen
 
 **Índice**
-1. [Objetivo del Estudiante (Student Outcome)](#Objetivo del Estudiante (Student Outcome))
-2. [Capítulo 1: Presentación](#Capítulo 1: Presentación)
-3. [Capítulo 2: Marco](#Capítulo 2: Marco)
-4. [Capítulo 3: Gestión](#Capítulo 3: Gestión)
-5. [Capítulo 4: Implementación de solución](#Capítulo 4: Implementación de solución)
-6. [Conclusiones](#Conclusiones)
-7. [Recomendaciones](#Recomendaciones)
-8. [Glosario](#Glosario)
-9. [Bibliografía](#Bibliografía)
+1. Objetivo del Estudiante (Student Outcome)
+2. Capítulo 1: Presentación
+3. Capítulo 2: Marco
+4. Capítulo 3: Gestión
+5. Capítulo 4: Implementacie solución
+6. Conclusiones
+7. Recomendaciones
+8. Glosario
+9. Bibliografía
 
 
 

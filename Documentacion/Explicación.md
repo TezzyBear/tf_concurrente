@@ -2,6 +2,10 @@
 
 ### Resumen
 
+En este trabajo evaluaremos la industria alimenticia, la cual a tenido un aumento desde el año pasado, aumento en la exportación y ventas. En dicha área se evidencio un problema con la pulpa de fresa, la cual posee características que se van perdiendo con el tiempo mientras no se encuentre fresca.
+Por este motivo y en el siguiente trabajo con la ayuda de machine Lenin y programación concurrente, una plataforma donde se podrá calcular la probabilidad de que la pulpa de fruta pierda sus propiedades y ya no sea comercial según las características ingresadas.
+
+
 **Índice**
 1. Objetivo del Estudiante (Student Outcome)
 2. Capítulo 1: Presentación
@@ -18,6 +22,7 @@
 
 ## Objetivo del Estudiante (Student Outcome)
 
+ABET – CAC - Student Outcome 5: Funcionar eficazmente como miembro o líder de un equipo que participa en actividades apropiadas para la disciplina del programa.
 
 ## Capítulo 1: Presentación
 
@@ -32,6 +37,12 @@ Se propone realizar un programa que pueda predecir mediante técnicas de machine
 ## Capítulo 2: Marco
 
 ## Capítulo 3: Gestión
+Para el desarrollo de este trabajo se utilizó la herramienta de github para poder llevar un control y el avance de todas las actividades a realizar, además de poder almacenar los archivos necesarios para dicha implementación.
+![](https://user-images.githubusercontent.com/40810772/68733291-1dbe2f00-05a4-11ea-902e-687df6348ac7.PNG)
+![](https://user-images.githubusercontent.com/40810772/68733081-9cff3300-05a3-11ea-86a1-c1609d6594a7.PNG)
+
+Además, se utilizó la herramienta lucidchart para diseñar la vista de la aplicación y poder llevar un mejor enfoque a el producto terminado.
+
 
 
 ## Capítulo 4: Implementación de solución]

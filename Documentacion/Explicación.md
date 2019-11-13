@@ -45,7 +45,7 @@ Además, se utilizó la herramienta lucidchart para diseñar la vista de la apli
 
 
 
-## Capítulo 4: Implementación de solución]
+## Capítulo 4: Implementación de solución
 
 
 ## Conclusiones

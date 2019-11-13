@@ -1,6 +1,6 @@
 # Detección de pérdida de color en la pulpa de fresas
 
-###Resumen
+### Resumen
 
 **Índice**
 1. [Objetivo del Estudiante (Student Outcome)](#id1)

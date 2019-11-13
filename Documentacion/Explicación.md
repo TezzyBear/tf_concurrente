@@ -16,7 +16,7 @@
 
 
 <div id='id1' />
-## Objetivo del Estudiante (Student Outcome)
+##Objetivo del Estudiante (Student Outcome)
 
 <div id='id2' />
 ## Capítulo 1: Presentación

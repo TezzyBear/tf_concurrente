@@ -1,3 +1,11 @@
+**Inegrantes**
+- Renzo Vargas        -----------------------Codigo: u201521485
+- Luis Guillermo          ---------------------    Codigo: u201612216
+- Mauricio Rodiguez       ----------------   Codigo: u201510971
+- Fabricio Torrico        --------------------       Codigo: u201416750
+
+
+
 # Detección de pérdida de color en la pulpa de fresas
 
 ### Resumen
@@ -36,6 +44,13 @@ Se propone realizar un programa que pueda predecir mediante técnicas de machine
 
 ## Capítulo 2: Marco
 
+Como ya fue mencionado previamente, para este trabajo utilizaremos ‘Blockchain’, este termino se puede explicar como un conjunto de tecnologías que emplean funciones criptográficas, además que facilitan la transferencia de un valor de un lugar a otro sin que aparezca alguna intervención de un tercero. Blockchain es un amplio registro de datos los cuales permiten que estén enlazados y cifrados de manera segura para mantener la confidencialidad y seguridad de las transacciones. (Dávila, 2019)
+
+![enter image description here](https://praxent.com/wp-content/uploads/2018/04/blockchain-1024x773.png)
+
+Por tales motivos se aplicó Blockchain para la seguridad y registro de los datos que se van a almacenar mediante la función de el aplicativo.
+
+
 ## Capítulo 3: Gestión
 Para el desarrollo de este trabajo se utilizó la herramienta de github para poder llevar un control y el avance de todas las actividades a realizar, además de poder almacenar los archivos necesarios para dicha implementación.
 ![](https://user-images.githubusercontent.com/40810772/68733291-1dbe2f00-05a4-11ea-902e-687df6348ac7.PNG)
@@ -58,5 +73,7 @@ Además, se utilizó la herramienta lucidchart para diseñar la vista de la apli
 
 
 ## Bibliografía
+Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/
+
 
 

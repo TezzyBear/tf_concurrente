@@ -46,7 +46,7 @@ Se propone realizar un programa que pueda predecir mediante técnicas de machine
 
 Como ya fue mencionado previamente, para este trabajo utilizaremos ‘Blockchain’, este termino se puede explicar como un conjunto de tecnologías que emplean funciones criptográficas, además que facilitan la transferencia de un valor de un lugar a otro sin que aparezca alguna intervención de un tercero. Blockchain es un amplio registro de datos los cuales permiten que estén enlazados y cifrados de manera segura para mantener la confidencialidad y seguridad de las transacciones. (Dávila, 2019)
 
-![enter image description here](https://praxent.com/wp-content/uploads/2018/04/blockchain-1024x773.png)
+![](https://praxent.com/wp-content/uploads/2018/04/blockchain-1024x773.png)
 
 Por tales motivos se aplicó Blockchain para la seguridad y registro de los datos que se van a almacenar mediante la función de el aplicativo.
 
@@ -57,7 +57,8 @@ Para el desarrollo de este trabajo se utilizó la herramienta de github para pod
 ![](https://user-images.githubusercontent.com/40810772/68733081-9cff3300-05a3-11ea-86a1-c1609d6594a7.PNG)
 
 Además, se utilizó la herramienta lucidchart para diseñar la vista de la aplicación y poder llevar un mejor enfoque a el producto terminado.
-
+![](https://user-images.githubusercontent.com/40810772/68996639-dae1ad00-086a-11ea-8b2b-74c4b8b37e2c.png)
+Como se ve en la imagen, se podrá visualizar los datos ingresados en una tabla con sus respectivos atributos detectando la clase "Días", además que se mostrará una gráfica comparando todos los datos ingresados.
 
 
 ## Capítulo 4: Implementación de solución

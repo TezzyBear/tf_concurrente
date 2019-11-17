@@ -1,0 +1,16 @@
+Inicio
+    
+    Atributo -> atributo de Dato
+    Dato -> vacío
+    Datos -> arreglo de Dato
+    Servidor -> servidor de datos
+    
+    Función Principal:
+        Conectar a Servidor
+        Hacer siempre:
+            Dato <- ingresar nuevo Atributo
+            Enviar Dato a Servidor
+            Si llega Dato encriptado desde Servidor:
+                Datos <- añadir Dato encriptado
+                
+Fin

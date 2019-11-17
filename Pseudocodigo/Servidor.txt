@@ -1,0 +1,18 @@
+Inicio
+
+    Dato -> vacío
+    Datos -> Arreglo de Dato
+    Clientes -> Arreglo de Cliente
+    
+    Función Principal:
+        Iniciar Servidor
+        Hacer siempre:
+            Si Nuevo Atributo de Dato llega:
+                Dato <- añadir atributo
+                Dato <- encriptar Dato
+                Si Dato contiene todos sus Atributos:
+                    Datos <- añadir Dato
+                    Cliente -> escoger aleatorio de Clientes
+                    Cliente <- guardar Dato encriptado
+                    
+Fin

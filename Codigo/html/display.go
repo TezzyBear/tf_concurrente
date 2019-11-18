@@ -14,9 +14,9 @@ var htmlStr string;
 
 func handle(w http.ResponseWriter, r *http.Request) {
 
-	db = append(db, [4]string{"1","2","3","4"})
-	db = append(db, [4]string{"5","6","7","8"})
-	db = append(db, [4]string{"9","10","11","12"})
+	db = append(db, [4]string{"h1","a2","3","4"})
+	db = append(db, [4]string{"h5","6","7d","8"})
+	db = append(db, [4]string{"h9","10","11","12"})
 
 	tableStr := ""
 
@@ -29,7 +29,6 @@ func handle(w http.ResponseWriter, r *http.Request) {
 		}
 		tableStr += "</tr>"
 	}
-
 	
 	htmlStr = strings.Replace(htmlStr, "REMPLAZAMOSACA", tableStr, 1)
 

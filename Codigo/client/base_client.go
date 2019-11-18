@@ -22,7 +22,7 @@ type Pred struct {
 }
 
 func main(){
-	con,_ := net.Dial("tcp", "192.168.1.10:8000")
+	con,_ := net.Dial("tcp", "192.168.0.22:8000")
 	resp := ""
 	r := bufio.NewReader(con)
 
@@ -106,6 +106,21 @@ func main(){
 			jsonStr := string(jsonBytes) + "\n";
 
 			fmt.Fprintf(con, jsonStr);
+
+			go func(){
+				for{
+					msgResp, err := r.ReadString('\n');
+					if err != nil {
+						continue;
+					}
+					fmt.Println(msgResp)
+					msgPred = strings.TrimSpace(msgPred);
+					var predData Pred;
+					json.Unmarshal([]byte(msgPred), &predData);
+					predChan <-predData;
+				}
+				
+			}()
 		}
 	}
 }

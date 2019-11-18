@@ -100,7 +100,9 @@ En la implementación del cliente se enviará un mensaje avisando al que se agre
 
 ## Bibliografía
 Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/
+
 Agarwal, A. (8 de Octubre de 2018). Towards Data Science. Obtenido de https://towardsdatascience.com/polynomial-regression-bbe8b9d97491
+
 Carollo Limeres, M. C. (2011-2012). REGRESIÓN LINEAL SIMPLE. Estadística. FBA.
 
 

@@ -62,6 +62,11 @@ Como se ve en la imagen, se podrá visualizar los datos ingresados en una tabla 
 
 
 ## Capítulo 4: Implementación de solución
+Se desarrollo un programa el cual obtuvo 2 partes, un código desde la vista del cliente y otro por parte del servidor.
+
+En la implementación del cliente se enviará un mensaje avisando al que se agregara una nueva muestra, se le hará el aviso al servidor mediante un ADD y el servidor va a agregar una nueva fila a la base de datos regresando un ID al cliente, luego el cliente podrá mandar un dato el cual contendrá el ID y un dato extra, además de poder seleccionar donde se encontrara el dato, esto se podrá repetir varias veces. Por último, se podrá dar la opción a salir en donde se mandará un mensaje para avisar la salida, por lo cual el servidor agregará la muestra a un channel, dándole un valor y generando un valor al ID donde será agregado a el conjunto de muestras totales.
+
+![](https://user-images.githubusercontent.com/40810772/69023971-c4347680-098e-11ea-82f5-43a7192cad7b.png)
 
 
 ## Conclusiones

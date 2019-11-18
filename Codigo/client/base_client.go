@@ -15,6 +15,12 @@ type Dato struct {
 	Valor string  `json:"valor"`
 }
 
+type Pred struct {
+	A float64 `json:"a"`
+	B float64 `json:"b"`
+	L float64 `json:"L"`
+}
+
 func main(){
 	con,_ := net.Dial("tcp", "192.168.0.22:8000")
 	resp := ""
@@ -71,6 +77,35 @@ func main(){
 			}			
 		case "2":
 			fmt.Fprintf(con, "PREDECIR\n");
+			predData := Pred{};
+			for predData.A == 0 || predData.B == 0 || predData.L == 0{
+
+				fmt.Print("Que dato desea ingresar (1: Color a* - 2: Color b* - 3: Color L*: ")
+				fmt.Scanf("%s\n", &resp)
+
+				col, _ := strconv.Atoi(resp);
+
+				var val float64;
+				switch col {	
+				case 1:
+					fmt.Print("Ingrese el color a*: ");
+					fmt.Scanf("%f\n", &val);
+					predData.A = val;
+				case 2:
+					fmt.Print("Ingrese el color b*: ");
+					fmt.Scanf("%f\n", &val);
+					predData.B = val;
+				case 3:
+					fmt.Print("Ingrese el color L*: ");
+					fmt.Scanf("%f\n", &val);
+					predData.L = val;
+				}			
+			}
+
+			jsonBytes, _ := json.Marshal(predData);
+			jsonStr := string(jsonBytes) + "\n";
+
+			fmt.Fprintf(con, jsonStr);
 		}
 	}
 }

@@ -107,20 +107,23 @@ func main(){
 
 			fmt.Fprintf(con, jsonStr);
 
+			respChan := make(chan string);
+			
 			go func(){
 				for{
 					msgResp, err := r.ReadString('\n');
 					if err != nil {
 						continue;
 					}
-					fmt.Println(msgResp)
-					msgPred = strings.TrimSpace(msgPred);
-					var predData Pred;
-					json.Unmarshal([]byte(msgPred), &predData);
-					predChan <-predData;
+					msgResp = strings.TrimSpace(msgResp);
+					respChan<- msgResp;
+					break;
 				}
-				
 			}()
+				resp := <-respChan
+			
+				fmt.Print("La prediccion resulta ser: ");
+				fmt.Println(resp);
 		}
 	}
 }

@@ -124,8 +124,7 @@ func handle(con net.Conn){
 			
 			predLinear, _:= predecir(calcE(predData.a, predData.b, predData.L));
 
-			fmt.Fprintf(con, fmt.Sprintf("%f", predLinear)) //Add new column
-
+			fmt.Fprintf(con, fmt.Sprintf("%f", predLinear) + "\n") //Add new column
 		}
 	}	
 }
@@ -182,9 +181,13 @@ func predecir(E float64) (float64, float64) {
 
 	toPred := fmt.Sprintf("%f", E)
 
+	fmt.Println("1")
+
 	//enviar comando de ejecucion python
 	cmd := exec.Command("python", "../machine_learning/LinearRegression.py", "makePrediction", toPred)
 	out, _ := cmd.CombinedOutput()
+
+	fmt.Println("2")
 
 	//limpiar output
 	strOut := string(out)

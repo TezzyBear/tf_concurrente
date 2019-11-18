@@ -87,16 +87,18 @@ En la implementación del cliente se enviará un mensaje avisando al que se agre
 
 ![](https://user-images.githubusercontent.com/40810772/69024037-107fb680-098f-11ea-8a34-e7013a4fbc7b.png)
 
-
+Luego de obtener los datos agregados, se procede a hacer un cálculo para poder hallar la clase resultante, para esto...
 
 ## Conclusiones
-
+Luego del desarrollo del proyecto, podemos concluir que los datos obtenidos de la pulpa de fresa tienen un patrón, en donde se pueden predecir sus datos mediante técnicas estadísticas sin una gran complejidad.
 
 ## Recomendaciones
- 
+Para futuros trabajos seria mas optimo mediante técnica de machine learning, reconocer el color de manera automática y no manual para obtener datos mas exactos y una mejor predicción. Ademas trabajar con un sistema de archivos que pueda guardar la nueva información en memoria principal para integrar los distintos modulos y poder exportar los archivos a otros medios de análisis.
 
 ## Glosario
-
+- Blockchain
+- Regresión lineal
+- Regresión polinomial
 
 ## Bibliografía
 Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/

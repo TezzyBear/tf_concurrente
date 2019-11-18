@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 
 # cargar dataset
-dataset = pd.read_csv('strawberriesData.csv')
+dataset = pd.read_csv('../machine_learning/strawberriesData.csv')
 
 # seleccion de datos
 X = dataset.iloc[:, 5].values.reshape(-1,1)
@@ -28,7 +28,6 @@ pol_reg.fit(X_poly, y)
 
 def makePrediction(toPred):
     # Prediccion de modelo lineal y polinomial
-    print("Prueba")
     print(lin_reg.predict([[toPred]]), pol_reg.predict(poly_reg.fit_transform([[toPred]])), sep=",")
 
 if __name__ == '__main__':

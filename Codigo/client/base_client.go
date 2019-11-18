@@ -22,7 +22,7 @@ type Pred struct {
 }
 
 func main(){
-	con,_ := net.Dial("tcp", "192.168.0.22:8000")
+	con,_ := net.Dial("tcp", "192.168.1.10:8000")
 	resp := ""
 	r := bufio.NewReader(con)
 

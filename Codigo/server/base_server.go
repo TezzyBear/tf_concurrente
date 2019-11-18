@@ -38,6 +38,7 @@ type Pred struct {
 
 func main(){
 
+	fmt.Println("servidor iniciado")
 	csvToDb("../machine_learning/strawberriesData.csv");
 
 	myIP := getOutboundIP();
@@ -182,7 +183,7 @@ func predecir(E float64) (float64, float64) {
 	toPred := fmt.Sprintf("%f", E)
 
 	//enviar comando de ejecucion python
-	cmd := exec.Command("python", "LinearRegression.py", "makePrediction", toPred)
+	cmd := exec.Command("python", "../machine_learning/LinearRegression.py", "makePrediction", toPred)
 	out, _ := cmd.CombinedOutput()
 
 	//limpiar output
@@ -191,8 +192,6 @@ func predecir(E float64) (float64, float64) {
 	strOut = strings.Replace(strOut, "[", "", -1)
 	strOut = strings.Replace(strOut, "]", "", -1)
 	split := strings.Split(strOut, ",")
-
-	fmt.Println(split)
 
 	//conversion de resultados (split[0] = regresion lineal, split[1] = regresion polinomial)
 	linearResult, _ := strconv.ParseFloat(split[0], 64)

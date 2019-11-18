@@ -50,6 +50,25 @@ Como ya fue mencionado previamente, para este trabajo utilizaremos ‘Blockchain
 
 Por tales motivos se aplicó Blockchain para la seguridad y registro de los datos que se van a almacenar mediante la función de el aplicativo.
 
+Además, en el uso de machine learning se utilizó la regresión lineal y polinomial, para poder obtener la predicción de la clase deseada. Regresión lineal explica la relación que existe entre una variable dependiente y un grupo de variables independientes X1..., Xn. Para dicha técnica donde una variable Y expuesta a una variable X, se busca una función la cual sea más optima en la aproximación de un conjunto de puntos (xi,yi), mediante una curva. (Carollo Limeres, 2011-2012)
+Se puede expresar mediante la siguiente expresión:
+
+<img src="https://latex.codecogs.com/gif.latex?Y&space;=&space;\alpha&space;&plus;&space;\beta&space;X&space;&plus;&space;\varepsilon" title="Y = \alpha + \beta X + \varepsilon" />
+
+ 
+
+Donde α es la ordenada en el origen, β es la pendiente de la recta y β una variable que incluye un conjunto grande de factores. X e Y son variables aleatorias, por ende, se pude generar una relación lineal entre estas variables. (Carollo Limeres, 2011-2012)
+
+![](https://user-images.githubusercontent.com/40810772/69093084-c0026a80-0a1b-11ea-8e81-357f83d9d740.PNG)
+
+Regresión polinomial es una forma de regresión lineal en la que la relación entre la variable independiente x y la variable dependiente y es modelada como un polinomio de grado n en x. A diferencia de la lineal, la polinomial puede llegar a captar mejor algunos modelos donde la curva puede ser utilizada mediante un exponente. (Agarwal, 2018)
+ 
+<img src="https://latex.codecogs.com/gif.latex?Y&space;=&space;\theta&space;_{0}&space;&plus;&space;\theta&space;_{1}&space;x&space;&plus;&space;\theta&space;_{2}&space;x^{2}" title="Y = \theta _{0} + \theta _{1} x + \theta _{2} x^{2}" />
+
+Con esto se puede ver que la curva puede llegar a pasar por mas puntos que la lineal.
+
+![](https://user-images.githubusercontent.com/40810772/69093603-c34a2600-0a1c-11ea-9587-c47455e3dc87.png)
+
 
 ## Capítulo 3: Gestión
 Para el desarrollo de este trabajo se utilizó la herramienta de github para poder llevar un control y el avance de todas las actividades a realizar, además de poder almacenar los archivos necesarios para dicha implementación.
@@ -81,6 +100,10 @@ En la implementación del cliente se enviará un mensaje avisando al que se agre
 
 ## Bibliografía
 Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/
+Agarwal, A. (8 de Octubre de 2018). Towards Data Science. Obtenido de https://towardsdatascience.com/polynomial-regression-bbe8b9d97491
+Carollo Limeres, M. C. (2011-2012). REGRESIÓN LINEAL SIMPLE. Estadística. FBA.
+
+
 
 
 

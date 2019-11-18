@@ -87,10 +87,19 @@ En la implementación del cliente se enviará un mensaje avisando al que se agre
 
 ![](https://user-images.githubusercontent.com/40810772/69024037-107fb680-098f-11ea-8a34-e7013a4fbc7b.png)
 
-Luego de obtener los datos agregados, se procede a hacer un cálculo para poder hallar la clase resultante, para esto...
+Los datos que se obtendrán e ingresar son los siguientes:
+
+| Tiempo   (días) | a*    | b*   | L*    | E*   |
+|-----------------|-------|------|-------|------|
+| 0               | 18.09 | 8.68 | 37.70 | 0.00 |
+| 7               | 17.22 | 9.05 | 39.28 | 1.84 |
+
+Donde la variable Días es el tiempo que tomara en malograrse y la clase a detectar, a*, b* y L* son los colores que va a ir tomando la muestra a lo largo del tiempo y E* es la distancia euclidiana la cual es la distancia euclidiana donde expresa el color desde el primer día en adelante.
+
+Luego de obtener los datos agregados, se procede a hacer un cálculo para poder hallar la clase resultante, para esto se prueba regresión lineal y polinomial. Para esto se consideran las 3 dimensiones del espacio del color, además tiene el tiempo en días, además se utilizó la variable E * ya que es la distancia euclidiana y posee más relación lineal que las demás variables. Este algoritmo fue aplicado en Python, al ejecutar la relación polinomial se realizo con grado 3 ya que se obtienen mejores resultados, al final se ejecuta el algoritmo y retorna la predicción en días tanto lineal como polinomial.
 
 ## Conclusiones
-Luego del desarrollo del proyecto, podemos concluir que los datos obtenidos de la pulpa de fresa tienen un patrón, en donde se pueden predecir sus datos mediante técnicas estadísticas sin una gran complejidad.
+Luego del desarrollo del proyecto, podemos concluir que los datos obtenidos de la pulpa de fresa tienen un patrón, en donde se pueden predecir sus datos mediante técnicas estadísticas sin una gran complejidad. Además, luego del desarrollo se evidencio que la regresión polinomial obtiene mejores resultados que la regresión lineal para esta predicción con los datos mencionados.
 
 ## Recomendaciones
 Para futuros trabajos seria mas optimo mediante técnica de machine learning, reconocer el color de manera automática y no manual para obtener datos mas exactos y una mejor predicción. Ademas trabajar con un sistema de archivos que pueda guardar la nueva información en memoria principal para integrar los distintos modulos y poder exportar los archivos a otros medios de análisis.

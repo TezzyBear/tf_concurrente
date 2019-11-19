@@ -28,21 +28,31 @@ func main(){
 
 	for{
 		resp = ""
-		fmt.Print("Desea agregar una nueva Muestra o predecir? (1: Agregar - 2: Predecir): ")
+		fmt.Print("Desea agregar una nueva Muestra o predecir? (1: Agregar - 2: Predecir - 3: Visualziar datos): ")
 		fmt.Scanf("%s\n", &resp)
 		
 		switch resp {
 		case "1":
 			fmt.Fprintf(con, "AGREGAR\n");
+			
+			msgId := ""
 
-			msgId, _ := r.ReadString('\n')
-			msgId = strings.TrimSpace(msgId);
-		
+			for {
+				msg, err := r.ReadString('\n')
+				if err != nil {
+					continue;
+				}
+				msgId = strings.TrimSpace(msg);
+				break;
+			}
+
+
+
 			for {
 				dato := Dato{};
 				dato.Id, _ = strconv.Atoi(msgId)
 
-				fmt.Print("Que dato desea ingresar (1: Dias transcurridos - 2: Color a* - 3: Salir: ")
+				fmt.Print("Que dato desea ingresar (1: Dias transcurridos - 2: Color a* - 3: Color b* - 4: Color L* - 5: Salir): ")
 				fmt.Scanf("%s\n", &resp)
 
 				col, _ := strconv.Atoi(resp);
@@ -58,6 +68,12 @@ func main(){
 					fmt.Print("Ingrese el color a*: ");
 					fmt.Scanf("%s\n", &val);
 				case 3:
+					fmt.Print("Ingrese el color b*: ");
+					fmt.Scanf("%s\n", &val);
+				case 4:
+					fmt.Print("Ingrese el color c*: ");
+					fmt.Scanf("%s\n", &val);
+				case 5:
 					fmt.Fprintf(con, "BREAK\n");
 					brake = true;
 				}
@@ -71,7 +87,7 @@ func main(){
 				jsonBytes, _ := json.Marshal(dato);
 				jsonStr := string(jsonBytes) + "\n";
 
-				fmt.Println(jsonStr);
+				//fmt.Println(jsonStr);
 				fmt.Fprintf(con, jsonStr);
 				
 			}			
@@ -80,7 +96,7 @@ func main(){
 			predData := Pred{};
 			for predData.A == 0 || predData.B == 0 || predData.L == 0{
 
-				fmt.Print("Que dato desea ingresar (1: Color a* - 2: Color b* - 3: Color L*: ")
+				fmt.Print("Que dato desea ingresar (1: Color a* - 2: Color b* - 3: Color L*): ")
 				fmt.Scanf("%s\n", &resp)
 
 				col, _ := strconv.Atoi(resp);
@@ -124,6 +140,21 @@ func main(){
 			
 				fmt.Print("La prediccion resulta ser: ");
 				fmt.Println(resp);
+			case "3":
+				fmt.Fprintf(con, "VISUALIZAR\n");
+				msgTable := ""
+
+				for {
+					msg, err := r.ReadString('z')
+					if err != nil {
+						continue;
+					}
+					msgTable = msg;
+					break;
+				}
+
+				fmt.Println(msgTable);
+
 		}
 	}
 }

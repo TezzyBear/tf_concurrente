@@ -1,4 +1,4 @@
-**Inegrantes**
+**Integrantes**
 - Renzo Vargas        -----------------------Codigo: u201521485
 - Luis Guillermo          ---------------------    Codigo: u201612216
 - Mauricio Rodiguez       ----------------   Codigo: u201510971
@@ -47,8 +47,29 @@ Se propone realizar un programa que pueda predecir mediante técnicas de machine
 Como ya fue mencionado previamente, para este trabajo utilizaremos ‘Blockchain’, este termino se puede explicar como un conjunto de tecnologías que emplean funciones criptográficas, además que facilitan la transferencia de un valor de un lugar a otro sin que aparezca alguna intervención de un tercero. Blockchain es un amplio registro de datos los cuales permiten que estén enlazados y cifrados de manera segura para mantener la confidencialidad y seguridad de las transacciones. (Dávila, 2019)
 
 ![](https://praxent.com/wp-content/uploads/2018/04/blockchain-1024x773.png)
+(Praxent, 2018)
 
 Por tales motivos se aplicó Blockchain para la seguridad y registro de los datos que se van a almacenar mediante la función de el aplicativo.
+
+Además, en el uso de machine learning se utilizó la regresión lineal y polinomial, para poder obtener la predicción de la clase deseada. Regresión lineal explica la relación que existe entre una variable dependiente y un grupo de variables independientes X1..., Xn. Para dicha técnica donde una variable Y expuesta a una variable X, se busca una función la cual sea más optima en la aproximación de un conjunto de puntos (xi,yi), mediante una curva. (Carollo Limeres, 2011-2012)
+Se puede expresar mediante la siguiente expresión:
+
+<img src="https://latex.codecogs.com/gif.latex?Y&space;=&space;\alpha&space;&plus;&space;\beta&space;X&space;&plus;&space;\varepsilon" title="Y = \alpha + \beta X + \varepsilon" />
+
+ 
+
+Donde α es la ordenada en el origen, β es la pendiente de la recta y β una variable que incluye un conjunto grande de factores. X e Y son variables aleatorias, por ende, se pude generar una relación lineal entre estas variables. (Carollo Limeres, 2011-2012)
+
+![](https://user-images.githubusercontent.com/40810772/69093084-c0026a80-0a1b-11ea-8e81-357f83d9d740.PNG)
+
+
+Regresión polinomial es una forma de regresión lineal en la que la relación entre la variable independiente x y la variable dependiente y es modelada como un polinomio de grado n en x. A diferencia de la lineal, la polinomial puede llegar a captar mejor algunos modelos donde la curva puede ser utilizada mediante un exponente. (Agarwal, 2018)
+ 
+<img src="https://latex.codecogs.com/gif.latex?Y&space;=&space;\theta&space;_{0}&space;&plus;&space;\theta&space;_{1}&space;x&space;&plus;&space;\theta&space;_{2}&space;x^{2}" title="Y = \theta _{0} + \theta _{1} x + \theta _{2} x^{2}" />
+
+Con esto se puede ver que la curva puede llegar a pasar por mas puntos que la lineal.
+
+![](https://user-images.githubusercontent.com/40810772/69093603-c34a2600-0a1c-11ea-9587-c47455e3dc87.png)
 
 
 ## Capítulo 3: Gestión
@@ -60,6 +81,15 @@ Además, se utilizó la herramienta lucidchart para diseñar la vista de la apli
 ![](https://user-images.githubusercontent.com/40810772/68996639-dae1ad00-086a-11ea-8b2b-74c4b8b37e2c.png)
 Como se ve en la imagen, se podrá visualizar los datos ingresados en una tabla con sus respectivos atributos detectando la clase "Días", además que se mostrará una gráfica comparando todos los datos ingresados.
 
+También se obtuvieron las siguientes historias de usuario para la implementación del software.
+
+| ID  | Historia de usuario                                                                                                                         |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------|
+| H01 | Como usuario deseo poder ingresar los datos de una pulpa de fresa para poder generar una predicción                                         |
+| H02 | Como usuario quiero poder generar una predicción con los datos ingresados para poder saber cuántos útiles más le quedan a la pulpa de fresa |
+| H03 | Como usuario deseo visualizar los datos ingresados en una tabla para poder tener una comparación con las demás pulpas                       |
+| H04 | Como usuario deseo poder visualizar los datos ingresados en una grafica para tener un mejor control comparado con los demás datos           |
+| H05 | Como usuario deseo poder ingresar los datos completos de una pulpa para poder aumentar la base de datos total                               |
 
 ## Capítulo 4: Implementación de solución
 Se desarrollo un programa el cual obtuvo 2 partes, un código desde la vista del cliente y otro por parte del servidor.
@@ -68,19 +98,38 @@ En la implementación del cliente se enviará un mensaje avisando al que se agre
 
 ![](https://user-images.githubusercontent.com/40810772/69024037-107fb680-098f-11ea-8a34-e7013a4fbc7b.png)
 
+Los datos que se obtendrán e ingresar son los siguientes:
 
+| Tiempo   (días) | a*    | b*   | L*    | E*   |
+|-----------------|-------|------|-------|------|
+| 0               | 18.09 | 8.68 | 37.70 | 0.00 |
+| 7               | 17.22 | 9.05 | 39.28 | 1.84 |
+
+Donde la variable Días es el tiempo que tomara en malograrse y la clase a detectar, a*, b* y L* son los colores que va a ir tomando la muestra a lo largo del tiempo y E* es la distancia euclidiana la cual es la distancia euclidiana donde expresa el color desde el primer día en adelante.
+
+Luego de obtener los datos agregados, se procede a hacer un cálculo para poder hallar la clase resultante, para esto se prueba regresión lineal y polinomial. Para esto se consideran las 3 dimensiones del espacio del color, además tiene el tiempo en días, además se utilizó la variable E * ya que es la distancia euclidiana y posee más relación lineal que las demás variables. Este algoritmo fue aplicado en Python, al ejecutar la relación polinomial se realizo con grado 3 ya que se obtienen mejores resultados, al final se ejecuta el algoritmo y retorna la predicción en días tanto lineal como polinomial.
 
 ## Conclusiones
-
+Luego del desarrollo del proyecto, podemos concluir que los datos obtenidos de la pulpa de fresa tienen un patrón, en donde se pueden predecir sus datos mediante técnicas estadísticas sin una gran complejidad. Además, luego del desarrollo se evidencio que la regresión polinomial obtiene mejores resultados que la regresión lineal para esta predicción con los datos mencionados.
 
 ## Recomendaciones
- 
+Para futuros trabajos seria mas optimo mediante técnica de machine learning, reconocer el color de manera automática y no manual para obtener datos mas exactos y una mejor predicción. Ademas trabajar con un sistema de archivos que pueda guardar la nueva información en memoria principal para integrar los distintos modulos y poder exportar los archivos a otros medios de análisis.
 
 ## Glosario
-
+- Blockchain
+- Regresión lineal
+- Regresión polinomial
 
 ## Bibliografía
 Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/
+
+Praxent. (2 de Abril de 2018). Praxent. Obtenido de https://praxent.com/blog/explain-bitcoin-grandparents
+
+Agarwal, A. (8 de Octubre de 2018). Towards Data Science. Obtenido de https://towardsdatascience.com/polynomial-regression-bbe8b9d97491
+
+Carollo Limeres, M. C. (2011-2012). REGRESIÓN LINEAL SIMPLE. Estadística. FBA.
+
+
 
 
 

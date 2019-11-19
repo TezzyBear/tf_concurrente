@@ -77,7 +77,7 @@ func handle(con net.Conn){
 			fmt.Fprintf(con, fmt.Sprintf("%d\n", len(db)));//Add new column
 			db = append(db, [dim]string{})
 			var muestra Muestra;
-
+			chanMuestra:= make(chan Muestra)
 			go func(){
 				for {
 					msgDato, err := r.ReadString('\n');
@@ -87,6 +87,7 @@ func handle(con net.Conn){
 					msgDato = strings.TrimSpace(msgDato);
 					fmt.Println(msgDato)
 					if msgDato == "BREAK" {
+						chanMuestra<- muestra
 						break;
 					}
 					var dato Dato;	
@@ -99,10 +100,11 @@ func handle(con net.Conn){
 					LMuestra, _ := strconv.ParseFloat(muestra.valores[3], 64);
 
 					muestra.valores[4] = fmt.Sprintf("%f", calcE(aMuestra, bMuestra, LMuestra));
-					
-					db[muestra.id] = muestra.valores;
 				}
 			}()
+
+			muestra = <-chanMuestra;
+			db[muestra.id] = muestra.valores;
 
 		case "PREDECIR":
 

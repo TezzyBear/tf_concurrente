@@ -47,6 +47,7 @@ Se propone realizar un programa que pueda predecir mediante técnicas de machine
 Como ya fue mencionado previamente, para este trabajo utilizaremos ‘Blockchain’, este termino se puede explicar como un conjunto de tecnologías que emplean funciones criptográficas, además que facilitan la transferencia de un valor de un lugar a otro sin que aparezca alguna intervención de un tercero. Blockchain es un amplio registro de datos los cuales permiten que estén enlazados y cifrados de manera segura para mantener la confidencialidad y seguridad de las transacciones. (Dávila, 2019)
 
 ![](https://praxent.com/wp-content/uploads/2018/04/blockchain-1024x773.png)
+(Praxent, 2018)
 
 Por tales motivos se aplicó Blockchain para la seguridad y registro de los datos que se van a almacenar mediante la función de el aplicativo.
 
@@ -60,6 +61,7 @@ Se puede expresar mediante la siguiente expresión:
 Donde α es la ordenada en el origen, β es la pendiente de la recta y β una variable que incluye un conjunto grande de factores. X e Y son variables aleatorias, por ende, se pude generar una relación lineal entre estas variables. (Carollo Limeres, 2011-2012)
 
 ![](https://user-images.githubusercontent.com/40810772/69093084-c0026a80-0a1b-11ea-8e81-357f83d9d740.PNG)
+
 
 Regresión polinomial es una forma de regresión lineal en la que la relación entre la variable independiente x y la variable dependiente y es modelada como un polinomio de grado n en x. A diferencia de la lineal, la polinomial puede llegar a captar mejor algunos modelos donde la curva puede ser utilizada mediante un exponente. (Agarwal, 2018)
  
@@ -120,6 +122,8 @@ Para futuros trabajos seria mas optimo mediante técnica de machine learning, re
 
 ## Bibliografía
 Dávila, C. C. (30 de 10 de 2019). BBVA. Obtenido de https://www.bbva.com/es/pe/bbva-open-talks-lima-es-turno-de-hablar-de-blockchain/
+
+Praxent. (2 de Abril de 2018). Praxent. Obtenido de https://praxent.com/blog/explain-bitcoin-grandparents
 
 Agarwal, A. (8 de Octubre de 2018). Towards Data Science. Obtenido de https://towardsdatascience.com/polynomial-regression-bbe8b9d97491
 

@@ -79,6 +79,15 @@ Además, se utilizó la herramienta lucidchart para diseñar la vista de la apli
 ![](https://user-images.githubusercontent.com/40810772/68996639-dae1ad00-086a-11ea-8b2b-74c4b8b37e2c.png)
 Como se ve en la imagen, se podrá visualizar los datos ingresados en una tabla con sus respectivos atributos detectando la clase "Días", además que se mostrará una gráfica comparando todos los datos ingresados.
 
+También se obtuvieron las siguientes historias de usuario para la implementación del software.
+
+| ID  | Historia de usuario                                                                                                                         |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------|
+| H01 | Como usuario deseo poder ingresar los datos de una pulpa de fresa para poder generar una predicción                                         |
+| H02 | Como usuario quiero poder generar una predicción con los datos ingresados para poder saber cuántos útiles más le quedan a la pulpa de fresa |
+| H03 | Como usuario deseo visualizar los datos ingresados en una tabla para poder tener una comparación con las demás pulpas                       |
+| H04 | Como usuario deseo poder visualizar los datos ingresados en una grafica para tener un mejor control comparado con los demás datos           |
+| H05 | Como usuario deseo poder ingresar los datos completos de una pulpa para poder aumentar la base de datos total                               |
 
 ## Capítulo 4: Implementación de solución
 Se desarrollo un programa el cual obtuvo 2 partes, un código desde la vista del cliente y otro por parte del servidor.

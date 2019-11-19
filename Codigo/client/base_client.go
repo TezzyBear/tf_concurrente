@@ -22,13 +22,13 @@ type Pred struct {
 }
 
 func main(){
-	con,_ := net.Dial("tcp", "192.168.0.22:8000")
+	con,_ := net.Dial("tcp", "192.168.1.10:8000")
 	resp := ""
 	r := bufio.NewReader(con)
 
 	for{
 		resp = ""
-		fmt.Print("Desea agregar una nueva Muestra o predecir? (1: Agregar - 2: Predecir - 3: Visualziar datos): ")
+		fmt.Print("Desea agregar una nueva Muestra o predecir? (1: Agregar - 2: Predecir - 3: Visualizar datos): ")
 		fmt.Scanf("%s\n", &resp)
 		
 		switch resp {
@@ -71,7 +71,7 @@ func main(){
 					fmt.Print("Ingrese el color b*: ");
 					fmt.Scanf("%s\n", &val);
 				case 4:
-					fmt.Print("Ingrese el color c*: ");
+					fmt.Print("Ingrese el color L*: ");
 					fmt.Scanf("%s\n", &val);
 				case 5:
 					fmt.Fprintf(con, "BREAK\n");

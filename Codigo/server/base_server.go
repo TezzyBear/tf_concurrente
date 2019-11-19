@@ -90,16 +90,20 @@ func handle(con net.Conn){
 						chanMuestra<- muestra
 						break;
 					}
-					var dato Dato;	
+					var dato Dato;
 					json.Unmarshal([]byte(msgDato), &dato);
 					muestra.id = dato.Id;
+					if dato.Valor == "" {
+						dato.Valor = "0"
+					}
 					muestra.valores[dato.Columna-1] = dato.Valor;
 					
 					aMuestra, _ := strconv.ParseFloat(muestra.valores[1], 64);
 					bMuestra, _ := strconv.ParseFloat(muestra.valores[2], 64);
 					LMuestra, _ := strconv.ParseFloat(muestra.valores[3], 64);
+					fmt.Printf("a: %f, b: %f, L: %f\n", aMuestra, bMuestra, LMuestra)
 
-					muestra.valores[4] = fmt.Sprintf("%f", calcE(aMuestra, bMuestra, LMuestra));
+					muestra.valores[4] = fmt.Sprintf("%g", calcE(aMuestra, bMuestra, LMuestra));
 				}
 			}()
 
@@ -239,8 +243,13 @@ func dbAsString() string{
 		dbStr += "|";
 		for _, val := range db[inst]{
 			sep := 15
-			dbStr += val;
-			sep -= len(val);
+			if val == "" {
+				dbStr += "0"
+				sep = 14
+			} else {
+				dbStr += val;
+				sep -= len(val);
+			}
 			for s := 0; s < sep; s++ {
 				dbStr += " ";
 			}

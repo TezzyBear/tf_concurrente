@@ -1,4 +1,4 @@
-**Inegrantes**
+**Integrantes**
 - Renzo Vargas        -----------------------Codigo: u201521485
 - Luis Guillermo          ---------------------    Codigo: u201612216
 - Mauricio Rodiguez       ----------------   Codigo: u201510971
